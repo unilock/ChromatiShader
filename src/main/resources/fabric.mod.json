@@ -1,0 +1,32 @@
+{
+	"schemaVersion": 1,
+	"id": "chromatishader",
+	"version": "${version}",
+	"name": "ChromatiShader",
+	"description": "Why do you hate yourself",
+	"authors": [
+		"unilock"
+	],
+	"contact": {
+		"sources": "https://github.com/unilock/ChromatiShader"
+	},
+	"license": "MIT",
+	"icon": "assets/chromatishader/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"cc.unilock.chromatishader.ChromatiShader"
+		],
+		"client": [
+			"cc.unilock.chromatishader.client.ChromatiShaderClient"
+		]
+	},
+	"mixins": [
+		"chromatishader.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": ">=1.20",
+		"fabric-api": "*"
+	}
+}
